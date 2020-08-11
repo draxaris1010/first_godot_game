@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/tileset.png" type="Texture" id=1]
+[ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 80, 0, 80, 80, 0, 80 )
@@ -30,3 +31,6 @@ tile_set = SubResource( 2 )
 cell_size = Vector2( 80, 80 )
 format = 1
 tile_data = PoolIntArray( 0, 0, 0, 65536, 0, 0, 131072, 0, 0, 196608, 0, 0, 262144, 0, 0, 327680, 0, 0, 393216, 0, 0, 393217, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0 )
+
+[node name="Player" parent="TileMap" instance=ExtResource( 2 )]
+position = Vector2( 144, 186 )
